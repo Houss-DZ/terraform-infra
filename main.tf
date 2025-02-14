@@ -22,7 +22,7 @@ data "aws_ami" "ubuntu" {
 resource "aws_instance" "web" {
   ami           = data.aws_ami.ubuntu.id
   instance_type = "t2.micro"
-  key_name      = "your-key-pair-name"  # Remplace par le nom de ta clé SSH existante
+  key_name      = "ma clé ssh"  # Remplace par le nom de ta clé SSH existante
 
   tags = {
     Name = "YvanHousseine"
